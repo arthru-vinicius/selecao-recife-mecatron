@@ -1,0 +1,552 @@
+/* Estilização da tela de login */
+.login-body {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    height: 100vh;
+    background-color: #c0c0c0;
+}
+
+.cabecalho-login,
+.form-login {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cabecalho-login {
+    background-color: #191970;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+}
+
+.form-login {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+}
+
+.label-login {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-login {
+    width: 92%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.button-login {
+    width: 100%;
+    padding: 10px;
+    background-color: #191970;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-login:hover {
+    background-color: #0e0e0e;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Estilizações do dashboard */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    height: 100vh;
+    background-color: #c0c0c0;
+    overflow-x: hidden;
+}
+
+.menu-lateral {
+    width: 300px;
+    background-color: #202020;
+    padding: 40px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: auto;
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+.lista-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-menu .item-menu {
+    padding: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.lista-menu .item-menu.ativo {
+    background-color: #191970;
+}
+
+.lista-menu .item-menu:hover {
+    background-color: #191970;
+}
+
+.lista-menu .item-menu a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 20px 4%;
+    font-size: 15px;
+}
+
+.lista-menu .item-menu a .icon i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.hamburger-menu {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 30px;
+    color: #202020;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.conteudo-principal {
+    flex-grow: 1;
+    margin-left: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 0;
+}
+
+.titulo-principal {
+    position: sticky;
+    top: 0;
+    background-color: #c0c0c0;
+    z-index: 999;
+    padding: 20px;
+}
+
+.conteudo-principal h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.conteudo-principal .content {
+    flex-grow: 1;
+}
+
+footer {
+    text-align: center;
+    padding: 0px;
+    background-color: #f1f1f1;
+}
+
+/* Estilizações da lista de clientes */
+.centralizador-lista {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.container-lista {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px 0;
+}
+
+/* Estilos do cabeçalho */
+.cabecalho-lista {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #202020;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px 8px 0 0;
+    box-sizing: border-box;
+}
+
+.titulo {
+    flex: 1;
+    text-align: center;
+}
+
+.titulo h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.botoes {
+    margin-left: auto;
+}
+
+.botoes button {
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botoes button:hover {
+    background-color: #191970;
+}
+
+/* Estilos da tabela */
+.tabela-clientes {
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+    margin-top: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Estilos das células */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #e6f7ff;
+}
+
+th {
+    background-color: #202020;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Estilos dos botões dentro da tabela */
+.btnEditar,
+.btnExcluir {
+    padding: 8px 12px;
+    background-color: #202020;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btnEditar:hover {
+    background-color: #4CAF50;
+}
+
+.btnExcluir:hover {
+    background-color: #f44336;
+}
+
+
+/* Estilizações de formulários: */
+.centralizador {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+    width: 100%;
+    padding: 20px;
+}
+
+.container-cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin: 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.container-senha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin: 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.cabecalho {
+    background-color: #191970;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.div-form {
+    background-color: #f1f1f1;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid #ddd;
+}
+
+.linha-form {
+    margin-bottom: 15px;
+}
+
+.linha-form label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.linha-form input,
+.linha-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 20px);
+    margin: 0 auto;
+}
+
+.h2-senha {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.botao-salvar {
+    width: 100%;
+    padding: 10px;
+    background-color: #191970;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.botao-salvar:hover {
+    background-color: #0056b3;
+}
+
+/* Resultado da alteração de senha*/
+#resultado {
+    margin-top: 15px;
+}
+
+/* Estilizando tela inicial*/
+.tela-inicial {
+    padding: 20px;
+}
+
+.info-geral {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.info-geral h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.info-geral p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.centralizador-estatisticas {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.container-estatisticas {
+    width: 90%;
+    max-width: 1200px;
+}
+
+.linha-estatisticas {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.estatistica-item {
+    flex: 1;
+    margin: 0 10px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.estatistica-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.estatistica-item p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #191970;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+        position: absolute;
+        z-index: 1000;
+    }
+
+    .menu-lateral {
+        transform: translateX(-100%);
+        width: 200px;
+    }
+
+    .menu-lateral-aberto {
+        transform: translateX(0);
+    }
+
+    .conteudo-principal {
+        margin-left: 0;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .conteudo-principal h1 {
+        text-align: center;
+        font-size: 30px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+
+    .botoes {
+        text-align: center;
+    }
+
+    .container-form {
+        width: 90%;
+    }
+
+    .linha-edicao label {
+        font-size: 14px;
+    }
+
+    .linha-edicao input,
+    .linha-edicao select {
+        font-size: 14px;
+    }
+
+    .botao-salvar {
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    /* Responsividade da lista de clientes:
+     Esconde colunas menos relevantes em telas pequenas */
+    th:nth-child(1),
+    th:nth-child(4),
+    th:nth-child(5),
+    th:nth-child(6),
+    th:nth-child(7),
+    td:nth-child(1),
+    td:nth-child(4),
+    td:nth-child(5),
+    td:nth-child(6),
+    td:nth-child(7) {
+        display: none;
+    }
+
+    /* Ajusta a largura das colunas restantes */
+    th:nth-child(2),
+    th:nth-child(3),
+    th:nth-child(8),
+    td:nth-child(2),
+    td:nth-child(3),
+    td:nth-child(8) {
+        width: 33%;
+    }
+
+    .linha-estatisticas {
+        flex-direction: column;
+    }
+    .estatistica-item {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .menu-lateral {
+        width: 100%;
+    }
+
+    .menu-lateral-aberto {
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 600px) {
+    .cabecalho-login,
+    .form-login {
+        width: 90%;
+    }
+}
